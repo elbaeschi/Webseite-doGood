@@ -25,6 +25,18 @@
 #doku {
 	color: #FFFFFF;
 }
-h1, h3{
+h1, h2, h3{
 	color: #3D73BF;
-}	
+}
+.dropdown-toggle{
+	border-right: medium solid #8ccbf9;
+	color: #3D73BF;
+	font-size: 1.7rem;
+	}
+.dropdown-menu{
+	color: #3D73BF;
+	font-size: 1.4rem;
+	}
+#letzerAbsatz{
+	padding-bottom: 20px;
+	}

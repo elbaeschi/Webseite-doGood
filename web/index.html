@@ -26,16 +26,26 @@
    	    	<img src="img/logo_do good_final.png" width="300" height="82" alt="" class="img-responsive"/>
         </div>
         <div class="col-sm-8">
-        	<div class="navbar navbar-default"  id="hauptnavigation">
+        	<div class="navbar navbar-default" id="hauptnavigation">
             	<ul class="nav navbar-nav">
-                	<li><a href="#" class="navigationspunkt">Projekte</a></li>
-                    <li><a href="#" class="navigationspunkt">&Uuml;ber uns</a></li>
-                    <li><a href="#" class="navigationspunkt">Kontakt</a></li>
+                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                  <!-- Dropdown Menü -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="dogood.html#pate">Pate/In werden</a></li>
+                      <li><a href="dogood.html#spenden">Spenden</a></li>
+                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                  	</ul>
+                  </li>
+                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li>
                 </ul>
-        </div>
+        	</div>
         </div>
     </div>
     
@@ -50,30 +60,35 @@
         <div class="row" id="home_content">
             <div class="col-sm-4">
                 <h1>Projekte</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dijuskasd gubergren, no sea takimata sanctus est</p>
+                <p>DoGood unterstützt in Lateinamerika notleidende Kinder und bedürftige Jugendliche. <a href="projekte.html">Erfahren Sie Mehr darüber.</a></p>
             </div>
             <div class="col-sm-4">
-                <h1>News</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dijuskasd gubergren, no sea takimata sanctus est</p>
+                <h1>DoGood</h1>
+                <p>Übernehmen Sie eine Patenschaft, <a href="dogood.html#pate">helfen Sie mit</a> einer Spende oder engagieren Sie sich durch <a href="dogood.html#freiwillig">Freiwilligenarbeit.</a></p>
             </div>
             <div class="col-sm-4">
                 <h1>&Uuml;ber uns</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dijuskasd gubergren, no sea takimata sanctus est</p>
+                <p>Noch Fragen? Dann setzen Sie sich mit uns in <a href="kontakt.html">Kontakt</a>. Wir betreuen Sie gerne in jedem Belangen.</p>
             </div>
         </div>
     </div>
     
     <div class="row" style="background-color:#e6e6e6;">
     	<div class="col-sm-4">
-        	<h3>Spendenkonto</h3>
-            <p>Stiftung SOS-Kinderdorf Schweiz<br>
-            3000 Bern 14<br>
-            PC 30-31935-2<br>
-            IBAN: CH20 0900 0000 3003 1935 </p>
+        	<h3>Spenden an</h3>
+            <p>Spar- und Kreditbank EFG eG Bern<br>
+            IBAN DE69 5009 2100 0000 0468 68<br>
+            BIC GENODE51BH2
+            </p>
         </div>
     	<div class="col-sm-4">
         	<h3>Kontakt</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dijuskasd gubergren, no sea takimata sanctus est</p>
+            <p>HTW Chur<br>
+            University of Applied Sciences HTW Chur<br>
+            Pulvermühlestrasse 57, CH-7004 Chur<br>
+            Phone +41 (0)81 286 24 24<br>
+            hochschule@htwchur.ch
+            </p>
         </div>
     	<div class="col-sm-4">
         	<h3>Social Media</h3>
@@ -85,7 +100,7 @@
 <div class="container-fluid">
     <div class="row" id="footer">
         <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-        <div class="col-sm-6 text-center" id="doku"><a href="#">Dokumentation</a></div>
+        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
     </div>
 </div>
 
