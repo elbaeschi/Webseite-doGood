@@ -15,7 +15,95 @@
 
 <body>
 
+<div class="container-fluid">
+	<div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
+</div>
 
+<div class="container" style="background-color:#ffffff;">
+	<div class="row">
+    	<div class="col-sm-4">
+        	<!-- Logo -->
+   	    	<a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
+        </div>
+        <div class="col-sm-8">
+        	<div class="navbar navbar-default" id="hauptnavigation">
+            	<ul class="nav navbar-nav">
+                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                  <!-- Dropdown Menü -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="dogood.html#pate">Pate/In werden</a></li>
+                      <li><a href="dogood.html#spenden">Spenden</a></li>
+                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                  	</ul>
+                  </li>
+                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li>
+                </ul>
+        	</div>
+        </div>
+    </div>
+
+	<div class="container-fluid">
+        
+        <div class="row">
+            <h1>Spenden</h1>
+            <div class="col-sm-6">
+                <p>Ob Sie sich für eine Patenschaft oder eine regelmässige Spende von nur einem Franken pro Tag entscheiden, Sie helfen dadurch extrem leidvolle Kinderschicksale zum Besseren zu wenden.</p>
+                <p>Mit einer einmaligen Spende ermöglichen Sie zum Beispie schwer traumatisierten Kindern aus Krisengebieten eine professionelle psychologische Betreuung.</p>
+                <p>DOGOOD sagt Danke!</p>
+            </div>
+        </div>
+        
+        <div class="row">
+        	<div class="col-sm-6">
+            	<form role="form">
+                    <div class="radio">
+                    	<label><input type="radio" name="spenden" class="mehrmalsSpenden"> ich m&ouml;chte Patin/Pate werden</label>
+                    </div>
+                    <div class="radio">
+                    	<label><input type="radio" name="spenden" class="einmalig"> einmalig spenden</label>
+                    </div>
+                    <div class="radio">
+                    	<label><input type="radio" name="spenden" class="mehrmalsSpenden"> regelm&auml;ssig spenden</label>
+                    </div>
+                    <div class="form-group wieoftSpenden">
+                        
+                    </div>
+                    <!-- jQuery -->
+                    <script>
+						$('.mehrmalsSpenden').change(function(){
+							if($('.mehrmalsSpenden').is(':checked')){
+								$('.wieoftSpenden').html("<select class='form-control' id='wieoft'><option>monatlich</option><option>w&ouml;chentlich</option><option>vierterj&auml;hrlich</option><option>halbj&auml;hrlich</option><option>j&auml;hrlich</option></select>");
+								}
+							})
+						$('.einmalig').change(function(){
+							if($('.einmalig').is(':checked')){
+								$('.wieoftSpenden').empty();
+								}
+							})
+					</script>
+                    <!-- jQuery -->
+                    
+                </form>
+            </div>
+        </div>
+        
+	</div>
+
+<div class="container-fluid">
+    <div class="row" id="footer">
+        <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
+        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>
