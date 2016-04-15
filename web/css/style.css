@@ -40,3 +40,20 @@ h1, h2, h3{
 #letzerAbsatz{
 	padding-bottom: 20px;
 	}
+
+.btn-doGood {
+	border-radius: 0;
+	width: 75px;
+	height: 75px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+	
+.inputBetrag {
+	width: 50px;
+	}
+	
+.zahlungsartBild {
+	width: 100px;
+	margin: 5px;
+	}

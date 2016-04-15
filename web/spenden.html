@@ -58,23 +58,42 @@
                 <p>Mit einer einmaligen Spende ermöglichen Sie zum Beispie schwer traumatisierten Kindern aus Krisengebieten eine professionelle psychologische Betreuung.</p>
                 <p>DOGOOD sagt Danke!</p>
             </div>
-        </div>
-        
-        <div class="row">
+            
         	<div class="col-sm-6">
             	<form role="form">
-                    <div class="radio">
-                    	<label><input type="radio" name="spenden" class="mehrmalsSpenden"> ich m&ouml;chte Patin/Pate werden</label>
+                	<div class="form-group">
+                    	<h4>Betrag</h4>
+                    
+                        <div class="form-group">
+                            <div class="radio">
+                                <label><input type="radio" name="spenden" class="mehrmalsSpenden"> ich m&ouml;chte Patin/Pate werden</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="spenden" class="einmalig"> einmalig spenden</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="spenden" class="mehrmalsSpenden"> regelm&auml;ssig spenden</label>
+                            </div>
+                        </div>
+                        
+                    	<div class="btn-toolbar" role="toolbar">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-doGood">10 CHF</button>
+                                <button type="button" class="btn btn-doGood">20 CHF</button>
+                                <button type="button" class="btn btn-doGood">50 CHF</button>
+                                <button type="button" class="btn btn-doGood">100 CHF</button>
+                                <br>
+                                <button type="button" class="btn btn-doGood">
+                                	<input type="number" class="inputBetrag"><br>CHF
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="radio">
-                    	<label><input type="radio" name="spenden" class="einmalig"> einmalig spenden</label>
-                    </div>
-                    <div class="radio">
-                    	<label><input type="radio" name="spenden" class="mehrmalsSpenden"> regelm&auml;ssig spenden</label>
-                    </div>
+                    
                     <div class="form-group wieoftSpenden">
                         
                     </div>
+                    
                     <!-- jQuery -->
                     <script>
 						$('.mehrmalsSpenden').change(function(){
@@ -90,19 +109,100 @@
 					</script>
                     <!-- jQuery -->
                     
+                    <h4>Zahlungsart</h4>
+                    <div class="form-group">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#post">PostFinance</a></li>
+                            <li><a data-toggle="tab" href="#kk">Kreditkarte</a></li>
+                            <li><a data-toggle="tab" href="#rechnung">Rechnung</a></li>
+                        </ul>
+                        <div class="tab-content">
+                        <div id="post" class="tab-pane fade in active">
+                        <img class="zahlungsartBild" src="img/zahlungsart/post.jpg" alt="postfinance card">
+                        <input type="radio"> PostFinance<br>
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Hinweis zur Zahlungsart
+                        </div>
+                        <div id="kk" class="tab-pane fade">
+                        <img class="zahlungsartBild" src="img/zahlungsart/kk.jpg" alt="postfinance card">
+                        <input type="radio"> Kreditkarte<br>
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Hinweis zur Zahlungsart
+                        </div>
+                        <div id="rechnung" class="tab-pane fade">
+                        <img class="zahlungsartBild" src="img/zahlungsart/rechnung.jpg" alt="postfinance card">
+                        <input type="radio"> Rechnung<br>
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Hinweis zur Zahlungsart
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Personalien</h4>
+                    <div class="form-group">
+                        <label class="radio-inline"><input type="radio" name="anrede">Frau</label>
+                        <label class="radio-inline"><input type="radio" name="anrede">Herr</label>
+                    </div>
+                    <div class="form-group">                    
+                    	<label for="vorname">Vorname:</label>
+                        <input type="text" id="vorname" class="form-control">
+                    </div>
+                    <div class="form-group">                    
+                    	<label for="nachname">Nachname:</label>
+                        <input type="text" id="nachname" class="form-control">
+                    </div>
+                    <div class="form-group">                    
+                    	<label for="email">E-Mail:</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">                    
+                    	<label for="telefon">Telefonnummer:</label>
+                        <input type="tel" id="telefon" class="form-control">
+                    </div>
+                    <div class="checkbox">                    
+                    	<label><input type="checkbox"> Ich habe die Datenschutzerkl&auml;rung gelesen und akzeptiert.</label>
+                    </div>
+                    <div class="form-group">
+                    	<textarea rows="5" class="form-control" onClick="select()">Mitteilung</textarea>
+                    </div>
+                    <div class="checkbox">                    
+                    	<label><input type="checkbox"> Ja, ich m&ouml;chte eine Spendenbescheinigung f&uuml;r die Steuererkl&auml;rung</label>
+                    </div>
+                    <input type="submit" value="Absenden" class="btn btn-default">
+                    
                 </form>
             </div>
         </div>
         
 	</div>
 
+	<div class="row" style="background-color:#e6e6e6;">
+    	<div class="col-sm-4">
+        	<h3>Spenden an</h3>
+            <p>Spar- und Kreditbank EFG eG Bern<br>
+            IBAN DE69 5009 2100 0000 0468 68<br>
+            BIC GENODE51BH2
+            </p>
+        </div>
+    	<div class="col-sm-4">
+        	<h3>Kontakt</h3>
+            <p>HTW Chur<br>
+            University of Applied Sciences HTW Chur<br>
+            Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+            +41 (0)81 286 24 24<br>
+            hochschule@htwchur.ch
+            </p>
+        </div>
+    	<div class="col-sm-4">
+        	<h3>Social Media</h3>
+            <p></p>
+        </div>
+    </div>
+
+
+</div>
 <div class="container-fluid">
     <div class="row" id="footer">
         <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
         <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
     </div>
-</div>
-
 </div>
 
 </body>
