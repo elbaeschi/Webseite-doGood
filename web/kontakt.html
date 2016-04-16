@@ -62,31 +62,28 @@
             <div class="col-sm-6">
             	<h2>Kontaktieren sie uns</h2>
                 <form role="form">
-                	<div class="form-group">
-                    	<label for="nachname">Nachname: </label>
+                	<fieldset class="form-group">
+                    	<label for="nachname">Nachname</label>
                         <input type="text" class="form-control" id="nachname">
-                    </div>
-                    <div class="form-group">
-                    	<label for="vorname">Vorname: </label>
+                    </fieldset>
+                	<fieldset class="form-group">
+                    	<label for="vorname">Vorname</label>
                         <input type="text" class="form-control" id="vorname">
-                    </div>
-                    <div class="form-group">
-                    	<label for="email">E-Mail-Adresse: </label>
+                    </fieldset>
+                	<fieldset class="form-group">
+                    	<label for="email">E-Mail-Adresse</label>
                         <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                    	<label for="tel">Telefon: </label>
+                    </fieldset>
+                	<fieldset class="form-group">
+                    	<label for="tel">Telefon</label>
                         <input type="tel" class="form-control" id="tel">
+                    </fieldset>
+                    <div class="checkbox">
+                        <label for="freiwilligenarbeit">
+                        	<input type="checkbox" value="FAinteressiert" id="freiwilligenarbeit">ich bin interessiert an Freiwilligenarbeit
+                        </label>
                     </div>
-                    <div class="form-group">
-                    	<div class="checkbox">
-                    		<label for="freiwilligenarbeit"><input type="checkbox" value="" id="freiwilligenarbeit">ich bin interessiert an Freiwilligenarbeit</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                    	<div class="checkbox" id="helfen">
-                        </div>
-                    </div>
+                    <div class="checkbox" id="helfen"></div>
                     <!-- jQuery -->
                     <script>
 					$('#freiwilligenarbeit:checkbox').change(function(){
@@ -99,10 +96,11 @@
 					})
 					</script>
                     <!-- jQuery -->
-                    <div class="form-group">
-                    	<label for="mitteilung">Mitteilung: </label>
+                    <fieldset class="form-group">
+                    	<label for="mitteilung">Mitteilung</label>
                         <textarea id="mitteilung" rows="5" class="form-control"></textarea>
-                    </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-default">Absenden</button>
                 </form>
        		</div>
     	</div>
