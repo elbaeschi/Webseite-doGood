@@ -68,3 +68,21 @@ h1, h2, h3{
 form {
 	margin-bottom: 15px;
 	}
+
+#betrag {
+	background-color: #E6F4FF;
+	width: 100px;
+	border: none;
+	text-align: right;
+	}
+	
+.doGoodFont {
+	font-size: 22px;
+	color: #8CCBF9;
+	}
+
+.hoverlabel a {       
+    text-decoration: none;
+    margin: 0 10px;
+	color: #000000;
+	}
