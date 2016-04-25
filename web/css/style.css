@@ -60,7 +60,11 @@ h1, h2, h3{
 .zahlungsartBild {
 	width: 100px;
 	}
-	
+/* spezielles responsive Design machen*/
+.Kinderhand {
+	width: 50%;
+}
+
 .wieoftSpenden, #helfen {
 	margin-bottom: 0;
 	}

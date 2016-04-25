@@ -66,12 +66,161 @@ Durch den pers&ouml;nlichen Kontakt zu Ihrem Patenkind erhalten Sie Einblick in 
                 <p>Mit Ihrer Spende unterst&uuml;tzt DoGood Kinder, Jugendliche und deren Familien langfristig. Mit monatlichen Beitr&auml;gen oder einem einmaligen Betrag erreicht DoGood eine nachhaltige Verbesserung der Lebensumst&auml;nde vor Ort. &laquo;Wir k&ouml;nnen direkt mitverfolgen, was mit Ihrem und unserem Geld geschieht – das ist sehr motivierend!&raquo;</p>
             </div>
         </div>
-        <div class="row">
-        	<div class="col-sm-12">
+            
             <!-- Formular einbinden -->
             <h2>Spendenformular</h2>
-            </div>
-        </div>
+                <form role="form" name="spendeformular">
+                	<div class="row">
+        			<div class="col-sm-6">
+                    			<div class="radio">
+                    				<label>
+                        				<input type="radio" name="pateoderspenden" class="mehrmalsSpenden" value="patewerden" required> ich m&ouml;chte Patin/Pate werden
+                        			</label>
+                    </div>
+                    <div class="radio">
+                        			<label>
+                        				<input type="radio" name="pateoderspenden" class="einmalig" value="einmaligspenden"> einmalig spenden
+                        			</label>
+                    </div>
+                    <div class="radio">
+                    				<label>
+                    					<input type="radio" name="pateoderspenden" class="mehrmalsSpenden" value="mehrmalsspenden"> regelm&auml;ssig spenden
+                    				</label>
+                    </div>
+                   				<fieldset class="form-group">
+                        			<label>Betrag</label>
+                    				<input type="range" name="betrag" id="sliderBetrag" value="10" min="10" max="1000" step="10" onchange="updateTextInput(this.value);">										
+                        			<input type="number" id="betrag" value="10" class="doGoodFont"><span class="doGoodFont"> CHF</span>
+                        			<br>
+                        			<small class="text-muted">Für gr&ouml;ssere Spende als 1000 CHF, in blaues Feld klicken und Betrag eingeben</small>
+                                   
+                    	<script type="text/javascript">
+                    	<!-- jQuery sliderwert in inputfeld -->
+							$('#sliderBetrag').on('input', function() {
+								$(this).next('#betrag').val(this.value);
+							});
+							$('#betrag').keyup(function() {
+								$('#sliderBetrag').val($(this).val());
+							});
+						</script>
+                        <div class="form-group wieoftSpenden"></div>
+                    			</fieldset>
+                    <!-- jQuery wenn mehrmalsspenden oder patewerden aktiv, div-inhalt einblenden -->
+                    <script>
+						$('.mehrmalsSpenden').change(function(){
+							if($('.mehrmalsSpenden').is(':checked')){
+								$('.wieoftSpenden').html("<select class='form-control' id='wieoft' required><option>monatlich</option><option>w&ouml;chentlich</option><option>vierterj&auml;hrlich</option><option>halbj&auml;hrlich</option><option>j&auml;hrlich</option></select>");
+								}
+							})
+						$('.einmalig').change(function(){
+							if($('.einmalig').is(':checked')){
+								$('.wieoftSpenden').empty();
+								}
+							})
+					</script>
+                    		<fieldset class="form-group" >
+                    			<label>Zahlungsart</label>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#post">PostFinance</a></li>
+                            <li><a data-toggle="tab" href="#kk">Kreditkarte</a></li>
+                            <li><a data-toggle="tab" href="#rechnung">Rechnung</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="post" class="tab-pane fade in active">
+                                <img class="zahlungsartBild" src="img/zahlungsart/post.jpg" alt="postfinance card">
+                                	<input type="radio" name="zahlungsart" value="postfinance" required> PostFinance<br>
+                                <div class="hoverlabel">
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                </div>
+                            </div>
+                            <div id="kk" class="tab-pane fade">
+                                <img class="zahlungsartBild" src="img/zahlungsart/kk.jpg" alt="postfinance card">
+                                	<input type="radio" name="zahlungsart" value="kreditkarte"> Kreditkarte<br>
+                                <div class="hoverlabel">
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                </div>
+                            </div>
+                            <div id="rechnung" class="tab-pane fade">
+                                <img class="zahlungsartBild" src="img/zahlungsart/rechnung.jpg" alt="postfinance card">
+                                	<input type="radio" name="zahlungsart" value="rechnung"> Rechnung<br>
+                                <div class="hoverlabel">
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                </div>
+                            </div>
+                         
+                            <!-- jQuery infolabel hinzufügen-->
+                            <script>
+                            $(document).ready(function(){
+								$('[data-toggle="tooltip"]').tooltip({
+									placement : 'top'
+								});
+							});
+							</script>
+                            <img class="Kinderhand" src="img/help_hand_kinderhand_erwachsenenhand_blau.png" alt="postfinance card">
+                        </div>
+                        </fieldset>
+                        </div>
+                  
+              		<div class="col-sm-6">
+                    <h4>Personalien</h4>	
+                    <fieldset class="form-group">
+                    	<label>Anrede</label><br>
+                        <label class="radio-inline"><input type="radio" name="anrede" value="frau" required>Frau</label>
+                        <label class="radio-inline"><input type="radio" name="anrede" value="herr">Herr</label>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<label for="nachname">Nachname</label><br>
+                        <input type="text" id="nachname" class="form-control" name="nachname" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<label for="vorname">Vorname</label><br>
+                        <input type="text" id="vorname" class="form-control" name="vorname" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<label for="strasse">Strasse & Hausnummer</label><br>
+                        <input type="text" id="strasse" class="form-control" name="strasseundnummer" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<label for="ort">Ort</label><br>
+                        <input type="text" id="ort" class="form-control" name="ort" required>
+                    </fieldset>
+                  
+                    <fieldset class="form-group">
+                    	<label for="email">Email</label><br>
+                        <input type="email" id="email" class="form-control" name="email" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<label for="telefon">Telefonnummer</label><br>
+                        <input type="tel" id="telefon" class="form-control" name="telefonnummer" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                    	<textarea rows="5" class="form-control" name="mitteilung" onClick="select()">Mitteilung</textarea>
+                    </fieldset>
+                    
+                    <div class="checkbox">                    
+                    	<label>
+                        	<input type="checkbox" readonly> Ich habe die Datenschutzerkl&auml;rung gelesen und akzeptiert.
+                        </label>
+                    </div>
+                    
+                    <div class="checkbox">                    
+                    	<label>
+                        	<input type="checkbox" name="spendebescheinigungJa"> Ja, ich m&ouml;chte eine Spendenbescheinigung f&uuml;r die Steuererkl&auml;rung
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Absenden</button>
+                    </div>
+                    </div>
+                    </form>
+                    
+                
+     
         <div class="row">
         	<div class="col-sm-6">
             	<h2 id="freiwillig">Mit Freiwilligenarbeit</h2>
@@ -82,8 +231,8 @@ Durch den pers&ouml;nlichen Kontakt zu Ihrem Patenkind erhalten Sie Einblick in 
               <a href="kontakt.html"><button type="button" class="btn btn-primary .btn-lg">Anmelden für Freiwilligenarbeit</button></a>
             </div>
             <div class="col-sm-6">
-            	<!-- Ggf. Bild einbinden -->
-            	<img class="img-responsive center-block" src="#" alt=""/>
+            	<!-- Bild Kinder in der Schule -->
+            	<img class="img-responsive" src="img/Kinder_Schule.JPG" alt=""/>
             </div>
         </div>
         <div class="row">
@@ -92,8 +241,14 @@ Durch den pers&ouml;nlichen Kontakt zu Ihrem Patenkind erhalten Sie Einblick in 
             <p>Wenn wir &uuml;ber Menschen sprechen, die Hunger leiden, &uuml;ber Kinder die nicht in die Schule gehen, &uuml;ber Frauen die nur gehorchen d&uuml;rfen oder &uuml;ber Bev&ouml;lkerungen, die von Krankheiten befallen und dezimiert werden, dann sprechen wir nie von unvermeidbaren Schicksalsschl&auml;gen. Wir sprechen immer von verletzten Rechten, von Ungerechtigkeit, von pr&auml;zisen Verantwortungen der Regierungen und der multinationalen Konzerne.
 Und genau aus diesem Grund glauben wir, dass Armut besiegt werden kann. Die Schlagworte in unserer Arbeit sind Nahrung und Trinkwasser, Bildung und Gesundheit.
 DoGood ist ein konfessionell und politisch unabh&auml;ngiges Hilfswerk, das sich weltweit f&uuml;r benachteiligte Kinder und ihre Familien stark macht. Wir arbeiten in Lateinamerika und unser oberstes Ziel all unserer Projekte ist es, die Lebensbedingungen benachteiligter Kinder und ihrer Familien dauerhaft zu verbessern.</p>
-			
-			<h3>Unsere Mission</h3>
+			</div>
+            <div class="col-sm-6">
+            </div>
+            </div>	
+            
+            <div class="row">
+            <div class="col-sm-6">
+            <h3>Unsere Mission</h3>
 				<p><b>Kinder</b><br>
 Kinder sind die schw&auml;chsten Glieder unserer Gesellschaft, darum setzen wir alles daran ihnen nachhaltig zu helfen.</p>
 				<p><b>Bewusstsein</b><br>
@@ -103,8 +258,9 @@ Wir setzen unsere geplanten Projekte unb&uuml;rokratisch, schnell und seri&ouml;
 				<p><b>Finanzielle Mittel</b><br>
 Wir gehen sorgf&auml;ltig mit den uns anvertrauten monet&auml;ren Mitteln um und verwenden diese gezielt f&uuml;r unsere Projekte. Wir arbeiten mit privaten Spendern sowie Firmen Donatoren und Projektsponsoren (Sachleistungen) zusammen. Wir kommunizieren offen und sind jederzeit transparent. Unsere Jahresrechnungen werden durch eine externe Revisionsfirma gepr&uuml;ft.</p>
 		</div>
-		<div class="row">
-			<h3>Unsere Vision</h3>
+        
+		<div class="col-sm-6">
+        <h3>Unsere Vision</h3>
 				<p><b>Armut bek&auml;mpfen</b><br>
 Wir wollen helfen, die Armut etwas zu mildern und uns für die Verbesserung der Lebensbedingungen der Kinder in Afrika aktiv einsetzen.
             </p>
@@ -112,11 +268,8 @@ Wir wollen helfen, die Armut etwas zu mildern und uns für die Verbesserung der 
 Wir wollen Kindern, welche ohne Eltern aufwachsen, eine faire Chance auf Bildung, Ern&auml;hrung und Unterkunft geben.
 Wir m&ouml;chten uns in einer Welt der Globalisierung und Gewinnmaximierung f&uuml;r Menschen einsetzen, welche daran nicht partizipieren k&ouml;nnen. Wir m&ouml;chten jungen Menschen nachhaltige Perspektiven geben. DoGood und helfen auch Sie mit und <a href="#">Spenden Sie noch heute!</a></p>
             </div>
-            <div class="col-sm-6">
-            	<!-- Bild -->
-            </div>
         </div>
-    </div>
+        </div>
     
     <div class="row" style="background-color:#e6e6e6;">
     	<div class="col-sm-4">
