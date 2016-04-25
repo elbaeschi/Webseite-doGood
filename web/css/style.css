@@ -86,3 +86,15 @@ form {
     margin: 0 10px;
 	color: #000000;
 	}
+	
+#spendebutton {
+	text-decoration: none;
+	}
+
+#spendebutton div h3 {
+	text-align: center;
+	}
+
+#spendebutton div h3:hover {
+	color: #8CCBF9;
+	}
