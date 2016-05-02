@@ -77,13 +77,13 @@ h1, h2, h3{
 	margin-right: 10px;
 	margin-bottom: 10px;
 	}
-#spendebutton {
+.jumbo_button, a.jumbo_button {
 	text-decoration: none;
 	}
-#spendebutton div h3 {
+.jumbo_button div h3 {
 	text-align: center;
 	}
-#spendebutton div h3:hover {
+.jumbo_button div h3:hover {
 	color: #8CCBF9;
 	}
 div.panel-default>.panel-heading, .jumbotron {
@@ -108,4 +108,15 @@ div.panel-default>.panel-heading, .jumbotron {
     text-decoration: none;
     margin: 0 10px;
 	color: #000000;
+	}
+button.btn.btn-default {
+	background-color: #E6F4FF;
+	color: #3D73BF;
+	}
+/* ------------------ */	
+/* --blueimpgallery-- */
+/* ------------------ */	
+div#links a img {
+	border: 1px solid #8CCBF9;
+	margin: 0 0 3px 0;
 	}
