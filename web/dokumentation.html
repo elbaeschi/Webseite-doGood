@@ -1,169 +1,93 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Dokumentation</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <!-- jQuery einbinden -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!-- Bootstrap einbinden js css -->
-    <script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <!-- jquery plugin imagegallery css -->
-    <link rel="stylesheet" href="../resources/Gallery-master/css/blueimp-gallery.min.css">
-    <!-- eigenes css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<title>DoGood</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- jQuery einbinden -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+</script>
+<!-- Bootstrap einbinden js css -->
+<script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+<!-- eigenes css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-	<!--Kopfleiste-->
+
+<div class="container-fluid">
+	<div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
+</div>
+
+<div class="container" style="background-color:#ffffff;">
+	<div class="row">
+    	<div class="col-sm-4">
+        	<!-- Logo -->
+   	    	<img src="img/logo_do good_final.png" width="300" height="82" alt="" class="img-responsive"/>
+        </div>
+        <div class="col-sm-8">
+        	<div class="navbar navbar-default" id="hauptnavigation">
+            	<ul class="nav navbar-nav">
+                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                  <!-- Dropdown Menü -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">DoGood<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="dogood.html">Spenden</a></li>
+                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                  	</ul>
+                  </li>
+                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
+                </ul>
+        	</div>
+        </div>
+    </div>
+    
     <div class="container-fluid">
-        <div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
-    </div>
-	<!--Hauptteil (Sandwichinhalt)-->
-    <div class="container" style="background-color:#ffffff;">
-        <!--erste Reihe (Logo mit Navi)-->
-        <div class="row">
-            <!-- Logo -->
-            <div class="col-sm-4">
-                <a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
-            </div>
-            <!--Navigation-->
-            <div class="col-sm-8">
-                <div class="navbar navbar-default" id="hauptnavigation">
-                    <ul class="nav navbar-nav">
-                      	<li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
-                      	<!-- Dropdown Menü -->
-                      	<li class="dropdown">
-                        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood <span class="caret"></span></a>
-                        	<ul class="dropdown-menu">
-                          		<li><a href="dogood.html">Spenden</a></li>
-                          		<li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
-                          		<li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
-                        	</ul>
-                      	</li>
-                      	<li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
-                    </ul>
-                    <!--Spendeknopf-->
-                    <ul class="nav navbar-nav navbar-right">
-                        <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
-                    </ul>
-                </div>
-            </div>
+    	<div class="row">
+    		<!--JPG Anforderungen Doku einbinden-->
+        	<div class="col-sm-6">
+        		<img class="img-responsive" src="img/Dokumentation.jpg" alt="Dokumentation"/>
+        	</div>
         </div>
-       	<!--Container Seiteninhalt-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6"><h1>Dokumentation</h1></div>
-            </div>
-            <div class="row">
-            	<!--Spalte Links Problembeschrieb-->
-                <div class="col-sm-6">
-                    <h2>Problemstellung</h2>
-                    <p>Wir haben uns grundsätzlich gut mit Bootstrap zurecht gefunden, einzig die Reihenfolge beim Einbinden externer Dateien hat uns etwas Mühe bereitet. Auf Seiten mit viel Text galt es den Überblick über die vielen div-Tags zu behalten und die Zeilen konsequent einzurücken, was viel Zeit in Anspruch genommen hat und wir teilweise als mühsam empfunden haben.</p>
-                    <p>Die Integration von den Dropdown-Elementen im Menü war ebenfalls etwas knifflig. Bootstrap bietet zwar eine breite Palette von ansprechenden Elementen an, hält sich bezüglich Anweisung von individuellen Anpassungen auf ihrer Webseite jedoch etwas unpräzise. Dies hat den Einsatz von einigen Elementen etwas erschwert, aus unserer Sicht, jedoch nicht eingeschränkt. Aus den Unterlagen war für uns nicht genau ersichtlich, was der Auftrag bezüglich Responsive Bilder ist. Die Unklarheiten haben sich allerdings nach der Besprechung mit Herrn Bock erübrigt.</p>
-                    <p>Um eine effiziente Zusammenarbeit zu gewährleisten und damit gewährleistet ist, dass alle Gruppenmitglieder gleichzeitig an der Webseite arbeiten können, haben wir uns entschieden Source Tree einzusetzen. Da wir zuvor noch nicht mit Source Tree gearbeitet haben, hat die Einarbeitung in das Programm zusätzliche Zeit in Anspruch genommen. Zu Beginn traten vermehrt Fehlermeldungen bei den ‚Pulls‘ auf, was sich mit der Zeit jedoch regeln liess.</p>
-                    <p>Der Einsatz von JavaScript und jQuery für das Spendenformular erforderte fortgeschrittenes Wissen. Die Herausforderung war es einerseits, die Radio-Buttons mit einer ‚If-Bedingung‘ so zu programmieren, dass die Auswahl der Buttons verschiedene Auswahlmöglichkeiten ausgibt. Auch die Verbindung zwischen dem Betrag-Slider und dem Betrag-Inputfeld war knifflig und erforderte das Durchforsten mehrerer Stackoverflow-Seiten.</p>
-                    <p>Alles in Allem sind wir sehr zufrieden mit unserer Arbeit bezüglich Funktionalität, Design und Aufbau.</p>
-                </div>
-                <!--Spalte Rechts Quellen und Roaming-->
-                <div class="col-sm-6">
-                    <h2>Quellen</h2>
-                    <p>Für den Aufbau unserer Webseite haben wir folgende Quellen konultiert:</p>
-                    <a href="http://amico.actionaid.ch/de/index.php">Amico Action Aid</a>, abgerufen am 18. März 2016<br> 
-                    <a href="http://www.w3schools.com/">w3schools</a>, abgerufen am am 18. März 2016<br> 
-                    <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>, abgerufen am 18. März 2016<br>
-                    <a href="http://stackoverflow.com/questions/7960208/jquery-if-checkbox-is-checked">if Checkbox is checked</a>, abgerufen am 18. April 2016<br>
-                    <a href="http://stackoverflow.com/questions/12795307/jquery-ui-slider-change-value-of-slider-when-changed-in-input-field">keyup change value</a>, abgerufen am 18. April 2016
-                    <h2>Roaminggebühren</h2>
-                    <p>tba</p>
-                    <h3>Bildergallerie Projektarchitektur</h3>
-                    <!-- blueimp gallery Snippet Start -->
-                    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-                    <div id="blueimp-gallery" class="blueimp-gallery">
-                        <div class="slides"></div>
-                        <h3 class="title"></h3>
-                        <a class="prev">‹</a>
-                        <a class="next">›</a>
-                        <a class="close">×</a>
-                        <a class="play-pause"></a>
-                        <ol class="indicator"></ol>
-                    </div>
-                    <!-- blueimp gallery Links -->
-                    <div id="links">
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_1.jpg" title="Dokumentation Seite 1" data-gallery>
-                            <img src="img/doku/thumbs/thumb1.jpg" alt="seite 1 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_2.jpg" title="Dokumentation Seite 2" data-gallery>
-                            <img src="img/doku/thumbs/thumb2.jpg" alt="seite 2 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_3.jpg" title="Dokumentation Seite 3" data-gallery>
-                            <img src="img/doku/thumbs/thumb3.jpg" alt="seite 3 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_4.jpg" title="Dokumentation Seite 4" data-gallery>
-                            <img src="img/doku/thumbs/thumb4.jpg" alt="seite 4 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_5.jpg" title="Dokumentation Seite 5" data-gallery>
-                            <img src="img/doku/thumbs/thumb5.jpg" alt="seite 5 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_6.jpg" title="Dokumentation Seite 6" data-gallery>
-                            <img src="img/doku/thumbs/thumb6.jpg" alt="seite 6 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_7_1.jpg" title="Dokumentation Seite 7-1" data-gallery>
-                            <img src="img/doku/thumbs/thumb7-1.jpg" alt="seite 7-1 thumb">
-                        </a>
-                        <a href="img/doku/Entwurf_Architektur_DoGood_Seite_7_2.jpg" title="Dokumentation Seite 7-2" data-gallery>
-                            <img src="img/doku/thumbs/thumb7-2.jpg" alt="seite 7-2 thumb">
-                        </a>
-                    </div>
-                    <!-- blueimp gallery Snippet End -->
-                 </div>
-            </div>
+     </div>
+     
+  </div>
+    
+    <div class="row" style="background-color:#e6e6e6;">
+    	<div class="col-sm-4">
+        	<h3>Spenden an</h3>
+            <p>Spar- und Kreditbank EFG eG Bern<br>
+            IBAN DE69 5009 2100 0000 0468 68<br>
+            BIC GENODE51BH2
+            </p>
         </div>
-        <!--Footer-->                                                   
-        <div class="container-fluid">  
-            <div class="row" style="background-color:#e6e6e6;">
-                <div class="col-sm-4">
-                    <h3>Spenden an</h3>
-                    <p>Spar- und Kreditbank EFG eG Bern<br>
-                    IBAN DE69 5009 2100 0000 0468 68<br>
-                    BIC GENODE51BH2</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Kontakt</h3>
-                    <p>HTW Chur<br>
-                    University of Applied Sciences HTW Chur<br>
-                    Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
-                    +41 (0)81 286 24 24<br>
-                    hochschule@htwchur.ch</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Social Media</h3>
-                    <p></p>
-                </div>
-            </div>
+    	<div class="col-sm-4">
+        	<h3>Kontakt</h3>
+            <p>HTW Chur<br>
+            University of Applied Sciences HTW Chur<br>
+            Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+            +41 (0)81 286 24 24<br>
+            hochschule@htwchur.ch
+            </p>
+        </div>
+    	<div class="col-sm-4">
+        	<h3>Social Media</h3>
+            <p></p>
         </div>
     </div>
-    <!--Fussleiste-->
-    <div class="container-fluid">
-        <div class="row" id="footer">
-            <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-            <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
-        </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row" id="footer">
+        <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
+        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
     </div>
-    <!-- blueimp jQuery Script-->
-	<script src="../resources/Gallery-master/js/blueimp-gallery.min.js"></script>
-    <!-- blueimpLightbox script-->
-	<script>
-	document.getElementById('links').onclick = function (event) {
-		event = event || window.event;
-		var target = event.target || event.srcElement,
-			link = target.src ? target.parentNode : target,
-			options = {index: link, event: event},
-			links = this.getElementsByTagName('a');
-		blueimp.Gallery(links, options);
-	};
-	</script>
+</div>
+
 </body>
 </html>
