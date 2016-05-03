@@ -1,153 +1,152 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>DoGood</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<!-- jQuery einbinden -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-</script>
-<!-- Bootstrap einbinden js css -->
-<script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-<!-- eigenes css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>DoGood</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- jQuery einbinden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Bootstrap einbinden js css -->
+    <script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <!-- eigenes css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-<div class="container-fluid">
-	<div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
-</div>
-
-<div class="container" style="background-color:#ffffff;">
-	<div class="row">
-    	<div class="col-sm-4">
+	<!--Kopfleiste-->
+    <div class="container-fluid">
+        <div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
+    </div>
+	<!--Hauptteil (Sandwichinhalt)-->
+    <div class="container" style="background-color:#ffffff;">
+        <!--erste Reihe (Logo mit Navi)-->
+        <div class="row">
         	<!-- Logo -->
-   	    	<a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
+            <div class="col-sm-4">
+                <a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
+            </div>
+            <!--Navigation-->
+            <div class="col-sm-8">
+                <div class="navbar navbar-default" id="hauptnavigation">
+                    <ul class="nav navbar-nav">
+                      	<li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                      	<!-- Dropdown Menü -->
+                      	<li class="dropdown">
+                        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood <span class="caret"></span></a>
+                       	 	<ul class="dropdown-menu">
+                          		<li><a href="dogood.html">Spenden</a></li>
+                          		<li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                          		<li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                        	</ul>
+                      	</li>
+                      	<li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
+                    </ul>
+                    <!--Spendeknopf-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-8">
-        	<div class="navbar navbar-default" id="hauptnavigation">
-            	<ul class="nav navbar-nav">
-                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
-                  <!-- Dropdown Menü -->
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="dogood.html">Spenden</a></li>
-                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
-                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
-                  	</ul>
-                  </li>
-                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
-                </ul>
-        	</div>
+    	<!--Container Seiteninhalt-->
+        <div class="container-fluid">
+        	<!--erste Reihe Pate-->
+            <div class="row">
+            	<div class="col-sm-12"><h1>Ihr Engagement</h1></div>
+                <div class="col-sm-6">
+                    <h2>Pate/Patin werden</h2>
+                    <p>&Uuml;bernehmen Sie ab einem Franken pro Tag eine Patenschaft. Damit wenden Sie extrem leidvolle Kinderschicksale zum Besseren oder verhelfen Jugendlichen zu Bildung und somit zu Chancengleichheit.
+    Lernen Sie eine neue Kultur kennen
+    Sobald Sie sich als Patin oder Pate angemeldet haben, erhalten Sie denLebenslauf und Fotos Ihres Patenkindes sowie Informationen &uuml;ber das Land und das soziale Umfeld, in dem Ihr Patenkind lebt. Ausserdem informiert Sie DoGood einmal j&auml;hrlich &uuml;ber die Ver&auml;nderungen im Leben Ihres Patenkindes und im Alltag der Dorfgemeinschaft. Sie erhalten aktuelle Fotos und einen Projektbericht.
+    Bauen Sie eine pers&ouml;nliche Brieffreundschaft auf.
+    Ihr Patenkind ist BotschafterIn der Projekte von DoGood in seinem Dorf. Wenn Sie ihm Briefe schreiben, k&ouml;nnen Sie mehr &uuml;ber sein Leben erfahren und ihm auch von Ihnen erz&auml;hlen!
+    Besuchen Sie Ihr Patenkind vor Ort
+    Durch den pers&ouml;nlichen Kontakt zu Ihrem Patenkind erhalten Sie Einblick in sein Leben und nehmen Anteil am Alltag in einer fremden Kultur. Sie k&ouml;nnen Ihr Patenkind auch besuchen und vor Ort sehen, was Ihre Spende bewirkt.</p>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Mit einer Spende</h2>
+                    <p>Mit Ihrer Spende unterst&uuml;tzt DoGood Kinder, Jugendliche und deren Familien langfristig. Mit monatlichen Beitr&auml;gen oder einem einmaligen Betrag erreicht DoGood eine nachhaltige Verbesserung der Lebensumst&auml;nde vor Ort. &laquo;Wir k&ouml;nnen direkt mitverfolgen, was mit Ihrem und unserem Geld geschieht – das ist sehr motivierend!&raquo;</p>
+                    <a href="spenden.html" class="jumbo_button"><div class="jumbotron"><h3>Hier geht's zum Spendenformular</h3></div></a> 
+                </div>
+            </div>
+            <!--zweite Reihe Freiwilligenarbeit-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 id="freiwillig">Freiwilligenarbeit</h2>
+                    <p>Engagieren Sie sich mit anderen Freiwilligen f&uuml;r eine gerechtere Welt und werden Sie Botschafter f&uuml;r die Kinderrechte. Werden Sie pers&ouml;nlich aktiv – f&uuml;r die Rechte der Kinder und Jugendliche! Durch ihre sympathischen Aktivit&auml;ten sensibilisieren Sie die Bev&ouml;lkerung und tragen einen Teil der finanziellen Mittel zusammen. DoGood freut sich &uuml;ber jede Art von Unterst&uuml;tzung!</p>
+                    <img class="img-responsive" src="img/projekte/Freiwilligenarbeit_Kinder_Helfer.png" alt="Freiwilligenarbeit"/>
+                </div>
+                <div class="col-sm-6">
+                	<h3>Einsatzm&ouml;glichkeiten...</h3>
+                   	<p>...sind z.B. Veranstaltungen organisieren, Verkaufstand betreuen, Sponsoren suchen, Medienkontakte kn&uuml;pfen, kranke Kinder nach Massongex begleiten, Texte &uuml;bersetzen, eine Gruppe Gleichgesinnter leiten oder eine eigene Idee umsetzen! Und nat&uuml;rlich haben wir zusammen auch Spass dabei…</p>
+                  	<a href="kontakt.html" class="jumbo_button"><div class="jumbotron"><h3>Anmelden für Freiwilligenarbeit</h3></div></a>
+                </div>
+            </div>
+            <!--dritte Reihe über DoGood-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="ueber">&Uuml;ber uns</h2>
+                    <p>Wenn wir &uuml;ber Menschen sprechen, die Hunger leiden, &uuml;ber Kinder die nicht in die Schule gehen, &uuml;ber Frauen die nur gehorchen d&uuml;rfen oder &uuml;ber Bev&ouml;lkerungen, die von Krankheiten befallen und dezimiert werden, dann sprechen wir nie von unvermeidbaren Schicksalsschl&auml;gen. Wir sprechen immer von verletzten Rechten, von Ungerechtigkeit, von pr&auml;zisen Verantwortungen der Regierungen und der multinationalen Konzerne.
+    Und genau aus diesem Grund glauben wir, dass Armut besiegt werden kann. Die Schlagworte in unserer Arbeit sind Nahrung und Trinkwasser, Bildung und Gesundheit.
+    DoGood ist ein konfessionell und politisch unabh&auml;ngiges Hilfswerk, das sich weltweit f&uuml;r benachteiligte Kinder und ihre Familien stark macht. Wir arbeiten in Lateinamerika und unser oberstes Ziel all unserer Projekte ist es, die Lebensbedingungen benachteiligter Kinder und ihrer Familien dauerhaft zu verbessern.</p>
+                </div>
+             </div>
+            <!--vierte Reihe Leitbild-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Unsere Mission</h3>
+                    <b>Kinder</b><br>
+                    <p>Kinder sind die schw&auml;chsten Glieder unserer Gesellschaft, darum setzen wir alles daran ihnen nachhaltig zu helfen.</p>
+                    <b>Bewusstsein</b><br>
+                    <p>Schaffen eines Bewusstseins f&uuml;r die Probleme der Kinder in Afrika, welches uns hilft, unsere Ziele umzusetzen und die Bereitschaft der &Ouml;ffentlichkeit f&uuml;r ein Engagement und Spenden f&ouml;rdert.</p>
+                    <b>Projekte</b><br>
+                    <p>Wir setzen unsere geplanten Projekte unb&uuml;rokratisch, schnell und seri&ouml;s um. Wir &uuml;berwachen vor Ort kontinuierlich die Entwicklung sowie den aktuellen Stand der Projektarbeiten. <a href="projekte.html">Erfahren Sie mehr.</a></p>
+                    <b>Finanzielle Mittel</b><br>
+                    <p>Wir gehen sorgf&auml;ltig mit den uns anvertrauten monet&auml;ren Mitteln um und verwenden diese gezielt f&uuml;r unsere Projekte. Wir arbeiten mit privaten Spendern sowie Firmen Donatoren und Projektsponsoren (Sachleistungen) zusammen. Wir kommunizieren offen und sind jederzeit transparent. Unsere Jahresrechnungen werden durch eine externe Revisionsfirma gepr&uuml;ft.</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Unsere Vision</h3>
+                    <p><b>Armut bek&auml;mpfen</b><br>
+    Wir wollen helfen, die Armut etwas zu mildern und uns für die Verbesserung der Lebensbedingungen der Kinder in Afrika aktiv einsetzen.</p>
+                    <p id="letzerAbsatz"><b>Faire Chancen geben</b><br>
+    Wir wollen Kindern, welche ohne Eltern aufwachsen, eine faire Chance auf Bildung, Ern&auml;hrung und Unterkunft geben.
+    Wir m&ouml;chten uns in einer Welt der Globalisierung und Gewinnmaximierung f&uuml;r Menschen einsetzen, welche daran nicht partizipieren k&ouml;nnen. Wir m&ouml;chten jungen Menschen nachhaltige Perspektiven geben. DoGood und helfen auch Sie mit und <a href="#">Spenden Sie noch heute!</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->                                                   
+        <div class="container-fluid">  
+            <div class="row" style="background-color:#e6e6e6;">
+                <div class="col-sm-4">
+                    <h3>Spenden an</h3>
+                    <p>Spar- und Kreditbank EFG eG Bern<br>
+                    IBAN DE69 5009 2100 0000 0468 68<br>
+                    BIC GENODE51BH2</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Kontakt</h3>
+                    <p>HTW Chur<br>
+                    University of Applied Sciences HTW Chur<br>
+                    Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+                    +41 (0)81 286 24 24<br>
+                    hochschule@htwchur.ch</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Social Media</h3>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
-
-	<div class="container-fluid">
-        <div class="row">
-        <h1>Ihr Engagement</h1>
-            <div class="col-sm-6">
-                <h2>Pate/Patin werden</h2>
-                <p>&Uuml;bernehmen Sie ab einem Franken pro Tag eine Patenschaft. Damit wenden Sie extrem leidvolle Kinderschicksale zum Besseren oder verhelfen Jugendlichen zu Bildung und somit zu Chancengleichheit.
-Lernen Sie eine neue Kultur kennen
-Sobald Sie sich als Patin oder Pate angemeldet haben, erhalten Sie denLebenslauf und Fotos Ihres Patenkindes sowie Informationen &uuml;ber das Land und das soziale Umfeld, in dem Ihr Patenkind lebt. Ausserdem informiert Sie DoGood einmal j&auml;hrlich &uuml;ber die Ver&auml;nderungen im Leben Ihres Patenkindes und im Alltag der Dorfgemeinschaft. Sie erhalten aktuelle Fotos und einen Projektbericht.
-Bauen Sie eine pers&ouml;nliche Brieffreundschaft auf.
-Ihr Patenkind ist BotschafterIn der Projekte von DoGood in seinem Dorf. Wenn Sie ihm Briefe schreiben, k&ouml;nnen Sie mehr &uuml;ber sein Leben erfahren und ihm auch von Ihnen erz&auml;hlen!
-Besuchen Sie Ihr Patenkind vor Ort
-Durch den pers&ouml;nlichen Kontakt zu Ihrem Patenkind erhalten Sie Einblick in sein Leben und nehmen Anteil am Alltag in einer fremden Kultur. Sie k&ouml;nnen Ihr Patenkind auch besuchen und vor Ort sehen, was Ihre Spende bewirkt.</p>
-            </div>
-            <div class="col-sm-6">
-                <h2>Mit einer Spende</h2>
-                <p>Mit Ihrer Spende unterst&uuml;tzt DoGood Kinder, Jugendliche und deren Familien langfristig. Mit monatlichen Beitr&auml;gen oder einem einmaligen Betrag erreicht DoGood eine nachhaltige Verbesserung der Lebensumst&auml;nde vor Ort. &laquo;Wir k&ouml;nnen direkt mitverfolgen, was mit Ihrem und unserem Geld geschieht – das ist sehr motivierend!&raquo;</p>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-sm-12">
-            <!-- Formular einbinden -->
-            <h2>Spendenformular</h2>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-sm-6">
-            	<h2 id="freiwillig">Mit Freiwilligenarbeit</h2>
-                <p>Engagieren Sie sich mit anderen Freiwilligen f&uuml;r eine gerechtere Welt und werden Sie Botschafter f&uuml;r die Kinderrechte. Werden Sie pers&ouml;nlich aktiv – f&uuml;r die Rechte der Kinder und Jugendliche! Durch ihre sympathischen Aktivit&auml;ten sensibilisieren Sie die Bev&ouml;lkerung und tragen einen Teil der finanziellen Mittel zusammen. DoGood freut sich &uuml;ber jede Art von Unterst&uuml;tzung!</p>
-               <h3>Einsatzm&ouml;glichkeiten...</h3>
-               <p>...sind z.B. Veranstaltungen organisieren, Verkaufstand betreuen, Sponsoren suchen, Medienkontakte kn&uuml;pfen, kranke Kinder nach Massongex begleiten, Texte &uuml;bersetzen, eine Gruppe Gleichgesinnter leiten oder eine eigene Idee umsetzen! Und nat&uuml;rlich haben wir zusammen auch Spass dabei…
-                </p>
-              <a href="kontakt.html"><button type="button" class="btn btn-primary .btn-lg">Anmelden für Freiwilligenarbeit</button></a>
-            </div>
-            <div class="col-sm-6">
-            	<!-- Ggf. Bild einbinden -->
-            	<img class="img-responsive center-block" src="#" alt=""/>
-            </div>
-        </div>
-        <div class="row">
-        	<div class="col-sm-6">
-            <h2 id="ueber">&Uuml;ber uns</h2>
-            <p>Wenn wir &uuml;ber Menschen sprechen, die Hunger leiden, &uuml;ber Kinder die nicht in die Schule gehen, &uuml;ber Frauen die nur gehorchen d&uuml;rfen oder &uuml;ber Bev&ouml;lkerungen, die von Krankheiten befallen und dezimiert werden, dann sprechen wir nie von unvermeidbaren Schicksalsschl&auml;gen. Wir sprechen immer von verletzten Rechten, von Ungerechtigkeit, von pr&auml;zisen Verantwortungen der Regierungen und der multinationalen Konzerne.
-Und genau aus diesem Grund glauben wir, dass Armut besiegt werden kann. Die Schlagworte in unserer Arbeit sind Nahrung und Trinkwasser, Bildung und Gesundheit.
-DoGood ist ein konfessionell und politisch unabh&auml;ngiges Hilfswerk, das sich weltweit f&uuml;r benachteiligte Kinder und ihre Familien stark macht. Wir arbeiten in Lateinamerika und unser oberstes Ziel all unserer Projekte ist es, die Lebensbedingungen benachteiligter Kinder und ihrer Familien dauerhaft zu verbessern.</p>
-			
-			<h3>Unsere Mission</h3>
-				<p><b>Kinder</b><br>
-Kinder sind die schw&auml;chsten Glieder unserer Gesellschaft, darum setzen wir alles daran ihnen nachhaltig zu helfen.</p>
-				<p><b>Bewusstsein</b><br>
-Schaffen eines Bewusstseins f&uuml;r die Probleme der Kinder in Afrika, welches uns hilft, unsere Ziele umzusetzen und die Bereitschaft der &Ouml;ffentlichkeit f&uuml;r ein Engagement und Spenden f&ouml;rdert.</p>
-				<p><b>Projekte</b><br>
-Wir setzen unsere geplanten Projekte unb&uuml;rokratisch, schnell und seri&ouml;s um. Wir &uuml;berwachen vor Ort kontinuierlich die Entwicklung sowie den aktuellen Stand der Projektarbeiten. <a href="projekte.html">Erfahren Sie mehr.</a></p>
-				<p><b>Finanzielle Mittel</b><br>
-Wir gehen sorgf&auml;ltig mit den uns anvertrauten monet&auml;ren Mitteln um und verwenden diese gezielt f&uuml;r unsere Projekte. Wir arbeiten mit privaten Spendern sowie Firmen Donatoren und Projektsponsoren (Sachleistungen) zusammen. Wir kommunizieren offen und sind jederzeit transparent. Unsere Jahresrechnungen werden durch eine externe Revisionsfirma gepr&uuml;ft.</p>
-		</div>
-		<div class="row">
-			<h3>Unsere Vision</h3>
-				<p><b>Armut bek&auml;mpfen</b><br>
-Wir wollen helfen, die Armut etwas zu mildern und uns für die Verbesserung der Lebensbedingungen der Kinder in Afrika aktiv einsetzen.
-            </p>
-            <p id="letzerAbsatz"><b>Faire Chancen geben</b><br>
-Wir wollen Kindern, welche ohne Eltern aufwachsen, eine faire Chance auf Bildung, Ern&auml;hrung und Unterkunft geben.
-Wir m&ouml;chten uns in einer Welt der Globalisierung und Gewinnmaximierung f&uuml;r Menschen einsetzen, welche daran nicht partizipieren k&ouml;nnen. Wir m&ouml;chten jungen Menschen nachhaltige Perspektiven geben. DoGood und helfen auch Sie mit und <a href="#">Spenden Sie noch heute!</a></p>
-            </div>
-            <div class="col-sm-6">
-            	<!-- Bild -->
-            </div>
+	<!--Fussleiste-->
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
+            <div class="col-sm-6 text-center"><a href="dokumentation.html" id="doku">Dokumentation</a></div>
         </div>
     </div>
-    
-    <div class="row" style="background-color:#e6e6e6;">
-    	<div class="col-sm-4">
-        	<h3>Spenden an</h3>
-            <p>Spar- und Kreditbank EFG eG Bern<br>
-            IBAN DE69 5009 2100 0000 0468 68<br>
-            BIC GENODE51BH2
-            </p>
-        </div>
-    	<div class="col-sm-4">
-        	<h3>Kontakt</h3>
-            <p>HTW Chur<br>
-            University of Applied Sciences HTW Chur<br>
-            Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
-            +41 (0)81 286 24 24<br>
-            hochschule@htwchur.ch
-            </p>
-        </div>
-    	<div class="col-sm-4">
-        	<h3>Social Media</h3>
-            <p></p>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row" id="footer">
-        <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
-    </div>
-</div>
 
 </body>
 </html>

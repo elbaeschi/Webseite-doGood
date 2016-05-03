@@ -1,140 +1,148 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>DoGood</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<!-- jQuery einbinden -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-</script>
-<!-- Bootstrap einbinden js css -->
-<script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-<!-- eigenes css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- jQuery einbinden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Bootstrap einbinden js css -->
+    <script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <!-- eigenes css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-<div class="container-fluid">
-	<div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
-</div>
-
-<div class="container" style="background-color:#ffffff;">
-	<div class="row">
-    	<div class="col-sm-4">
-        	<!-- Logo -->
-   	    	<a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
-        </div>
-        <div class="col-sm-8">
-        	<div class="navbar navbar-default" id="hauptnavigation">
-            	<ul class="nav navbar-nav">
-                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
-                  <!-- Dropdown Menü -->
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="dogood.html">Spenden</a></li>
-                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
-                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
-                  	</ul>
-                  </li>
-                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
-                </ul>
-        	</div>
-        </div>
+	<!--Kopfleiste-->
+    <div class="container-fluid">
+        <div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
     </div>
-	<div class="container-fluid">
+	<!--Hauptteil (Sandwichinhalt)-->
+    <div class="container" style="background-color:#ffffff;">
+        <!--erste Reihe (Logo mit Navi)-->
         <div class="row">
-            <div class="col-sm-6">
-                <h2>Standort in Chur</h2>
-                <p>HTW Chur<br>
-                University of Applied Sciences HTW Chur<br>
-                Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
-                +41 (0)81 286 24 24<br>
-                hochschule@htwchur.ch
-            	</p>
+        	<!-- Logo -->
+            <div class="col-sm-4">
+                <a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
             </div>
-            <div class="col-sm-6">
-            	<h2>Kontaktieren sie uns</h2>
-                <form role="form">
-                	<fieldset class="form-group">
-                    	<label for="nachname">Nachname</label>
-                        <input type="text" class="form-control" id="nachname">
-                    </fieldset>
-                	<fieldset class="form-group">
-                    	<label for="vorname">Vorname</label>
-                        <input type="text" class="form-control" id="vorname">
-                    </fieldset>
-                	<fieldset class="form-group">
-                    	<label for="email">E-Mail-Adresse</label>
-                        <input type="email" class="form-control" id="email">
-                    </fieldset>
-                	<fieldset class="form-group">
-                    	<label for="tel">Telefon</label>
-                        <input type="tel" class="form-control" id="tel">
-                    </fieldset>
-                    <div class="checkbox">
-                        <label for="freiwilligenarbeit">
-                        	<input type="checkbox" value="FAinteressiert" id="freiwilligenarbeit">ich bin interessiert an Freiwilligenarbeit
-                        </label>
+            <!--Navigation-->
+            <div class="col-sm-8">
+                <div class="navbar navbar-default" id="hauptnavigation">
+                    <ul class="nav navbar-nav">
+                      	<li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                      	<!-- Dropdown Menü -->
+                      	<li class="dropdown">
+                        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">DoGood <span class="caret"></span></a>
+                        	<ul class="dropdown-menu">
+                         		<li><a href="dogood.html">Spenden</a></li>
+                          		<li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                          		<li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                        	</ul>
+                      	</li>
+                      	<li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
+                    </ul>
+                    <!--Spendeknopf-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Container Seiteninhalt-->
+        <div class="container-fluid">
+            <div class="row">
+            	<!--Adresse mit GoogleMap-->
+                <div class="col-sm-6">
+                    <h2>Standort in Chur</h2>
+                    <p>HTW Chur<br>
+                    University of Applied Sciences HTW Chur<br>
+                    Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+                    +41 (0)81 286 24 24<br>
+                    hochschule@htwchur.ch</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.5314442277263!2d9.510425615298693!3d46.85291304772944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784c708d30b4b9f%3A0x4692becdfa90767f!2sPulverm%C3%BChlestrasse+57%2C+7000+Chur!5e0!3m2!1sen!2sch!4v1461581405275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <div class="checkbox" id="helfen"></div>
-                    <!-- jQuery -->
-                    <script>
-					$('#freiwilligenarbeit:checkbox').change(function(){
-					if ($(this).is(":checked")) {
-						$('#helfen').html("<label for='unterlagen'><input type='checkbox' value='' id='unterlagen'>Bitte senden Sie mir Unterlagen zu</label><br><label for='kontaktieren'><input type='checkbox' value='' id='kontaktieren'>Bitte kontaktieren Sie mich</label><br><label for='anderes'><input type='checkbox' value='' id='anderes'>andere Mitteilung</label>");
-						}
-					else {
-						$('#helfen').empty();
-						}
-					})
-					</script>
-                    <!-- jQuery -->
-                    <fieldset class="form-group">
-                    	<label for="mitteilung">Mitteilung</label>
-                        <textarea id="mitteilung" rows="5" class="form-control"></textarea>
-                    </fieldset>
-                    <button type="submit" class="btn btn-default">Absenden</button>
-                </form>
-       		</div>
-    	</div>
-    
-        <div class="row" style="background-color:#e6e6e6;">
-            <div class="col-sm-4">
-                <h3>Spenden an</h3>
-                <p>Spar- und Kreditbank EFG eG Bern<br>
-                IBAN DE69 5009 2100 0000 0468 68<br>
-                BIC GENODE51BH2
-                </p>
+                </div>
+                <!--Kontakt-Formular-->
+                <div class="col-sm-6">
+                    <h2>Kontaktieren sie uns</h2>
+                    <form role="form">
+                        <fieldset class="form-group">
+                            <label for="nachname">Nachname</label>
+                            <input type="text" class="form-control" id="nachname">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="vorname">Vorname</label>
+                            <input type="text" class="form-control" id="vorname">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="email">E-Mail-Adresse</label>
+                            <input type="email" class="form-control" id="email">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="tel">Telefon</label>
+                            <input type="tel" class="form-control" id="tel">
+                        </fieldset>
+                        <div class="checkbox">
+                            <label for="freiwilligenarbeit">
+                                <input type="checkbox" value="FAinteressiert" id="freiwilligenarbeit">ich bin interessiert an Freiwilligenarbeit
+                            </label>
+                        </div>
+                        <div class="checkbox" id="helfen"></div>
+                        <fieldset class="form-group">
+                            <label for="mitteilung">Mitteilung</label>
+                            <textarea id="mitteilung" rows="5" class="form-control"></textarea>
+                        </fieldset>
+                        <button type="submit" class="btn btn-default">Absenden</button>
+                    </form>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3>Kontakt</h3>
-                <p>HTW Chur<br>
-                University of Applied Sciences HTW Chur<br>
-                Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
-                +41 (0)81 286 24 24<br>
-                hochschule@htwchur.ch
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Social Media</h3>
-                <p></p>
+        </div>
+        <!--Footer-->                                                   
+        <div class="container-fluid">  
+            <div class="row" style="background-color:#e6e6e6;">
+                <div class="col-sm-4">
+                    <h3>Spenden an</h3>
+                    <p>Spar- und Kreditbank EFG eG Bern<br>
+                    IBAN DE69 5009 2100 0000 0468 68<br>
+                    BIC GENODE51BH2</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Kontakt</h3>
+                    <p>HTW Chur<br>
+                    University of Applied Sciences HTW Chur<br>
+                    Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+                    +41 (0)81 286 24 24<br>
+                    hochschule@htwchur.ch</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Social Media</h3>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row" id="footer">
-        <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
+	<!--Fussleiste-->
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
+            <div class="col-sm-6 text-center"><a href="dokumentation.html" id="doku">Dokumentation</a></div>
+        </div>
     </div>
-</div>
+    <!-- jQuery -->
+	<script>
+    <!-- Checkbox #freiwilligenarbeit -->
+    $('#freiwilligenarbeit:checkbox').change(function(){
+    if ($(this).is(":checked")) {
+        $('#helfen').html("<label for='unterlagen'><input type='checkbox' value='' id='unterlagen'>Bitte senden Sie mir Unterlagen zu</label><br><label for='kontaktieren'><input type='checkbox' value='' id='kontaktieren'>Bitte kontaktieren Sie mich</label><br><label for='anderes'><input type='checkbox' value='' id='anderes'>andere Mitteilung</label>");
+        }
+    else {
+        $('#helfen').empty();
+        }
+    })
+    </script>
 
 </body>
 </html>

@@ -1,110 +1,114 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>DoGood</title>
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<!-- jQuery einbinden -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-</script>
-<!-- Bootstrap einbinden js css -->
-<script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-<!-- eigenes css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>DoGood</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- jQuery einbinden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- Bootstrap einbinden js css -->
+    <script src="../resources/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <!-- eigenes css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-
-<div class="container-fluid">
-	<div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
-</div>
-
-<div class="container" style="background-color:#ffffff;">
-	<div class="row">
-    	<div class="col-sm-4">
-        	<!-- Logo -->
-   	    	<img src="img/logo_do good_final.png" width="300" height="82" alt="" class="img-responsive"/>
-        </div>
-        <div class="col-sm-8">
-        	<div class="navbar navbar-default" id="hauptnavigation">
-            	<ul class="nav navbar-nav">
-                  <li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
-                  <!-- Dropdown Menü -->
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">DoGood<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="dogood.html">Spenden</a></li>
-                      <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
-                      <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
-                  	</ul>
-                  </li>
-                  <li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
-                </ul>
-        	</div>
-        </div>
+	<!--Kopfleiste-->
+    <div class="container-fluid">
+        <div class="row" style="background-color:#8ccbf9;">&nbsp;</div>
     </div>
-    
-    <div class="row">
-    	<!--Sliderbild-->
-        <div class="col-lg-12">
-        	<picture>
-                <source media="(min-width: 768px)" srcset="img/titelbild_schmal.jpg">
-                <source media="(min-width: 400px)" srcset="img/titelbild.jpg">
-                <img src="img/titelbild_schmal.jpg" alt="gl&uuml;liche Kinder" class="img-responsive">
-            </picture>
-        </div>
-    </div>
-
-	<div class="container-fluid">
-        <div class="row" id="home_content">
+	<!--Hauptteil (Sandwichinhalt)-->
+    <div class="container" style="background-color:#ffffff;">
+    	<!--erste Reihe (Logo mit Navi)-->
+        <div class="row">
+        	<!--Logo-->
             <div class="col-sm-4">
-                <h1>Projekte</h1>
-                <p>DoGood unterst&uuml;tzt in Lateinamerika notleidende Kinder und bed&uuml;rftige Jugendliche. <a href="projekte.html">Erfahren Sie Mehr dar&uuml;ber.</a></p>
+                <a href="index.html"><img src="img/logo_do good_final.png" width="300" height="82" alt="DoGood" class="img-responsive"/></a>
             </div>
-            <div class="col-sm-4">
-                <h1>DoGood</h1>
-                <p>&Uuml;bernehmen Sie eine Patenschaft, <a href="dogood.html#pate">helfen Sie mit</a> einer Spende oder engagieren Sie sich durch <a href="dogood.html#freiwillig">Freiwilligenarbeit.</a></p>
-            </div>
-            <div class="col-sm-4">
-                <h1>&Uuml;ber uns</h1>
-                <p>Noch Fragen? Dann setzen Sie sich mit uns in <a href="kontakt.html">Kontakt</a>. Wir betreuen Sie gerne in jedem Belangen.</p>
+            <!--Navigation-->
+            <div class="col-sm-8">
+                <div class="navbar navbar-default" id="hauptnavigation">
+                    <ul class="nav navbar-nav">
+                    	<li><a href="projekte.html" class="navigationspunkt">Projekte</a></li>
+                      	<!-- Dropdown Menü -->
+                      	<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">DoGood <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dogood.html">Spenden</a></li>
+                                <li><a href="dogood.html#freiwillig">Freiwilligenarbeit</a></li> 
+                                <li><a href="dogood.html#ueber">&Uuml;ber uns</a></li>
+                            </ul>
+                      	</li>
+                      	<li><a href="kontakt.html" class="navigationspunkt">Kontakt</a></li>
+                    </ul>
+                    <!--Spendeknopf-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <a href="spenden.html"><li><button type="button" class="btn btn-primary .btn-lg">Jetzt spenden!</button></li></a>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="row" style="background-color:#e6e6e6;">
-    	<div class="col-sm-4">
-        	<h3>Spenden an</h3>
-            <p>Spar- und Kreditbank EFG eG Bern<br>
-            IBAN DE69 5009 2100 0000 0468 68<br>
-            BIC GENODE51BH2
-            </p>
+        <!--zweite Reihe (grosses Bild)-->
+        <div class="row">
+            <div class="col-lg-12">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/index/titelbild_schmal.jpg">
+                    <source media="(min-width: 400px)" srcset="img/index/titelbild.jpg">
+                    <img src="img/index/titelbild_schmal.jpg" alt="gl&uuml;ckliche Kinder" class="img-responsive">
+                </picture>
+            </div>
         </div>
-    	<div class="col-sm-4">
-        	<h3>Kontakt</h3>
-            <p>HTW Chur<br>
-            University of Applied Sciences HTW Chur<br>
-            Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
-            +41 (0)81 286 24 24<br>
-            hochschule@htwchur.ch
-            </p>
+    	<!--Container für Inhalt-->
+        <div class="container-fluid">
+        	<!--drei Teaser-Spalten-->
+            <div class="row" id="home_content">
+                <div class="col-sm-4">
+                    <h1>Projekte</h1>
+                    <p>DoGood unterst&uuml;tzt in Lateinamerika notleidende Kinder und bed&uuml;rftige Jugendliche. <a href="projekte.html">Erfahren Sie Mehr dar&uuml;ber.</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h1>DoGood</h1>
+                    <p>&Uuml;bernehmen Sie eine Patenschaft, <a href="dogood.html#pate">helfen Sie mit</a> einer Spende oder engagieren Sie sich durch <a href="dogood.html#freiwillig">Freiwilligenarbeit.</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h1>&Uuml;ber uns</h1>
+                    <p>Noch Fragen? Dann setzen Sie sich mit uns in <a href="kontakt.html">Kontakt</a>. Wir betreuen Sie gerne in jedem Belangen.</p>
+                </div>
+            </div>
         </div>
-    	<div class="col-sm-4">
-        	<h3>Social Media</h3>
-            <p></p>
+        <!--Footer-->                                                   
+        <div class="container-fluid">  
+            <div class="row" style="background-color:#e6e6e6;">
+                <div class="col-sm-4">
+                    <h3>Spenden an</h3>
+                    <p>Spar- und Kreditbank EFG eG Bern<br>
+                    IBAN DE69 5009 2100 0000 0468 68<br>
+                    BIC GENODE51BH2</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Kontakt</h3>
+                    <p>HTW Chur<br>
+                    University of Applied Sciences HTW Chur<br>
+                    Pulverm&uuml;hlestrasse 57, CH-7004 Chur<br>
+                    +41 (0)81 286 24 24<br>
+                    hochschule@htwchur.ch</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Social Media</h3>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row" id="footer">
-        <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
+	<!--Fussleiste-->
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
+            <div class="col-sm-6 text-center"><a href="dokumentation.html" id="doku">Dokumentation</a></div>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
