@@ -49,14 +49,8 @@
     </div>
 
 	<div class="container-fluid">
-    	<div class="row">
-            <div class="col-sm-6">
-                <h1>Spenden</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
         <div class="row">
+            <h1>Spenden</h1>
             <div class="col-sm-6">
             	<h2>Wir sagen Danke</h2>
                 <p>Ob Sie sich für eine Patenschaft oder eine regelmässige Spende von nur einem Franken pro Tag entscheiden, Sie helfen dadurch extrem leidvolle Kinderschicksale zum Besseren zu wenden.</p>
@@ -66,7 +60,7 @@
             
         	<div class="col-sm-6">
             	<h2>Spendeformular</h2>
-            	<form role="form" name="spendeformular" action="http://mmp.mediologie.ch/im2/forms/ausgabe.php">
+            	<form role="form" name="spendeformular">
                     <div class="radio">
                     	<label>
                         	<input type="radio" name="pateoderspenden" class="mehrmalsSpenden" value="patewerden" required> ich m&ouml;chte Patin/Pate werden
@@ -82,6 +76,10 @@
                     		<input type="radio" name="pateoderspenden" class="mehrmalsSpenden" value="mehrmalsspenden"> regelm&auml;ssig spenden
                     	</label>
                     </div>
+                    <fieldset class="form-group">
+                    	
+                    
+                    </fieldset>
                     
                     <fieldset class="form-group">
                         <label>Betrag</label>
@@ -104,7 +102,7 @@
                     <script>
 						$('.mehrmalsSpenden').change(function(){
 							if($('.mehrmalsSpenden').is(':checked')){
-								$('.wieoftSpenden').html("<select class='form-control' id='wieoft' name='wieoft' required><option value='promonat'>monatlich</option><option value='prowoche'>w&ouml;chentlich</option><option value='provierteljahr'>vierterj&auml;hrlich</option><option value='prohalbjahr'>halbj&auml;hrlich</option><option value='projahr'>j&auml;hrlich</option></select>");
+								$('.wieoftSpenden').html("<select class='form-control' id='wieoft' required><option>monatlich</option><option>w&ouml;chentlich</option><option>vierterj&auml;hrlich</option><option>halbj&auml;hrlich</option><option>j&auml;hrlich</option></select>");
 								}
 							})
 						$('.einmalig').change(function(){
@@ -125,21 +123,21 @@
                                 <img class="zahlungsartBild" src="img/zahlungsart/post.jpg" alt="postfinance card">
                                 <input type="radio" name="zahlungsart" value="postfinance" required> PostFinance<br>
                                 <div class="hoverlabel">
-                                	<a><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
                                 </div>
                             </div>
                             <div id="kk" class="tab-pane fade">
                                 <img class="zahlungsartBild" src="img/zahlungsart/kk.jpg" alt="postfinance card">
                                 <input type="radio" name="zahlungsart" value="kreditkarte"> Kreditkarte<br>
                                 <div class="hoverlabel">
-                                	<a><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
                                 </div>
                             </div>
                             <div id="rechnung" class="tab-pane fade">
                                 <img class="zahlungsartBild" src="img/zahlungsart/rechnung.jpg" alt="postfinance card">
                                 <input type="radio" name="zahlungsart" value="rechnung"> Rechnung<br>
                                 <div class="hoverlabel">
-                                	<a><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
+                                	<a href="#"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-original-title="Infos" aria-hidden="true"></span></a> Hinweis zur Zahlungsart
                                 </div>
                             </div>
                             <!-- jQuery infolabel hinzufügen-->
@@ -196,7 +194,7 @@
                     
                     <div class="checkbox">                    
                     	<label>
-                        	<input type="checkbox" required> Ich habe die Datenschutzerkl&auml;rung gelesen und akzeptiert.
+                        	<input type="checkbox" readonly> Ich habe die Datenschutzerkl&auml;rung gelesen und akzeptiert.
                         </label>
                     </div>
                     
@@ -240,7 +238,7 @@
 <div class="container-fluid">
     <div class="row" id="footer">
         <div class="col-sm-6 text-center">Sebastian Hubacher, Siri Luyten, Jeannine Debrunner</div>
-        <div class="col-sm-6 text-center"><a href="dokumentation.html" id="doku">Dokumentation</a></div>
+        <div class="col-sm-6 text-center"><a href="#" id="doku">Dokumentation</a></div>
     </div>
 </div>
 

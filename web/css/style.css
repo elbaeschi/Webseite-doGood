@@ -60,7 +60,7 @@ h1, h2, h3{
 .zahlungsartBild {
 	width: 100px;
 	}
-
+	
 .wieoftSpenden, #helfen {
 	margin-bottom: 0;
 	}
@@ -85,16 +85,4 @@ form {
     text-decoration: none;
     margin: 0 10px;
 	color: #000000;
-	}
-	
-#spendebutton {
-	text-decoration: none;
-	}
-
-#spendebutton div h3 {
-	text-align: center;
-	}
-
-#spendebutton div h3:hover {
-	color: #8CCBF9;
 	}
