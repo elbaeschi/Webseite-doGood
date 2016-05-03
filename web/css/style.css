@@ -1,33 +1,20 @@
-/* DoGood style */
+/* ---DoGood-style--- */
+/* ------------------ */
+/* ----Navigation---- */
+/* ------------------ */
 .navigationspunkt {
 	border-right: medium solid #8ccbf9;
 	color: #3D73BF;
 	font-size: 1.7rem;
-}
+	}
 #hauptnavigation {
 	background-color: #FFFFFF;
 	border-color: #FFFFFF;
 	padding-top: 15px;
-}
+	}
 .navbar-nav   {
 	margin: 0; /* margin -15 bei mobile überschreiben*/
-}
-#home_content {
-	padding-bottom: 25px;
-}
-
-#footer {
-	background-color: #8CCBF9;
-	color: #FFFFFF;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-#doku {
-	color: #FFFFFF;
-}
-h1, h2, h3{
-	color: #3D73BF;
-}
+	}
 .dropdown-toggle{
 	border-right: medium solid #8ccbf9;
 	color: #3D73BF;
@@ -37,10 +24,52 @@ h1, h2, h3{
 	color: #3D73BF;
 	font-size: 1.4rem;
 	}
+/* ------------------ */
+/* ------Footer------ */
+/* ------------------ */
+#footer {
+	background-color: #8CCBF9;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+/* ------------------ */
+/* -----Abstände----- */
+/* ------------------ */
+/* ----allgemein----- */
 #letzerAbsatz{
 	padding-bottom: 20px;
 	}
-
+form {
+	margin-bottom: 15px;
+	}
+/* ----index.html---- */
+#home_content {
+	padding-bottom: 25px;
+	}
+/* ---spenden.html--- */
+.tab-content {
+	margin: 10px;
+	}
+.wieoftSpenden, #helfen {
+	margin-bottom: 0;
+	}
+/* ------------------ */
+/* ----Schriften----- */
+/* ------------------ */
+.doGoodFont {
+	font-size: 22px;
+	color: #8CCBF9;
+	}
+#doku {
+	color: #FFFFFF;
+	}
+h1, h2, h3{
+	color: #3D73BF;
+	}
+/* ------------------ */
+/* ---Buttons(+jumbo)-*/
+/* ------------------ */
 .btn-doGood {
 	border-radius: 0;
 	width: 75px;
@@ -48,41 +77,46 @@ h1, h2, h3{
 	margin-right: 10px;
 	margin-bottom: 10px;
 	}
-	
+.jumbo_button, a.jumbo_button {
+	text-decoration: none;
+	}
+.jumbo_button div h3 {
+	text-align: center;
+	}
+.jumbo_button div h3:hover {
+	color: #8CCBF9;
+	}
+div.panel-default>.panel-heading, .jumbotron {
+	background-color: #E6F4FF;
+	}
+/* ------------------ */	
+/* -----Formular----- */
+/* ------------------ */	
 .inputBetrag {
 	width: 50px;
 	}
-	
-.tab-content {
-	margin: 10px;
-	}	
-	
 .zahlungsartBild {
 	width: 100px;
 	}
-	
-.wieoftSpenden, #helfen {
-	margin-bottom: 0;
-	}
-	
-form {
-	margin-bottom: 15px;
-	}
-
 #betrag {
 	background-color: #E6F4FF;
 	width: 100px;
 	border: none;
 	text-align: right;
 	}
-	
-.doGoodFont {
-	font-size: 22px;
-	color: #8CCBF9;
-	}
-
 .hoverlabel a {       
     text-decoration: none;
     margin: 0 10px;
 	color: #000000;
+	}
+button.btn.btn-default {
+	background-color: #E6F4FF;
+	color: #3D73BF;
+	}
+/* ------------------ */	
+/* --blueimpgallery-- */
+/* ------------------ */	
+div#links a img {
+	border: 1px solid #8CCBF9;
+	margin: 0 0 3px 0;
 	}
