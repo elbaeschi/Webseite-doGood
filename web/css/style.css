@@ -66,6 +66,13 @@ form {
 	}
 h1, h2, h3{
 	color: #3D73BF;
+	font-family: 'Amatic SC', bold;
+	font-weight: 700;
+	}
+h4.panel-title {
+	font-family: 'Amatic SC', bold;
+	font-size: 18px;
+	font-weight: 700;
 	}
 /* ------------------ */
 /* ---Buttons(+jumbo)-*/
