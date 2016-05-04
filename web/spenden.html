@@ -89,7 +89,7 @@
                         <!--Slider & Input Betrag-->
                         <fieldset class="form-group">
                             <label>Betrag</label>
-                            <input type="range" name="betrag" id="sliderBetrag" value="10" min="10" max="1000" step="10" onchange="updateTextInput(this.value);">										
+                            <input type="range" name="betrag" id="sliderBetrag" value="10" min="10" max="1000" step="10">										
                             <input type="number" id="betrag" value="10" class="doGoodFont"><span class="doGoodFont"> CHF</span>
                             <br>
                             <small class="text-muted">Für gr&ouml;ssere Spende als 1000 CHF, in blaues Feld klicken und Betrag eingeben</small>
@@ -224,10 +224,10 @@
     <script type="text/javascript">
 	<!-- sliderwert in inputfeld -->
 		$('#sliderBetrag').on('input', function() {
-			$(this).next('#betrag').val(this.value);
+			$('#betrag').val(this.value);
 		});
 		$('#betrag').keyup(function() {
-			$('#sliderBetrag').val($(this).val());
+			$('#sliderBetrag').val(this.value);
 		});
 	<!-- wenn mehrmalsspenden oder patewerden aktiv, div-inhalt einblenden -->
 		$('.mehrmalsSpenden').change(function(){
